@@ -11,11 +11,11 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 require_once 'classes/index.php';
  
-class CW_DF_DutyFinder {    
+class CW_DutyFinder {    
   static $instance = null;
   public static function getInstance() {
     if(self::$instance === null) {
-      self::$instance = new CW_DF_DutyFinder();
+      self::$instance = new CW_DutyFinder();
     }
     return self::$instance;
   }
@@ -35,4 +35,4 @@ class CW_DF_DutyFinder {
   }
 } 
 
-add_action("plugins_loaded", array('CW_DF_DutyFinder', 'getInstance'));
+add_action("plugins_loaded", array('CW_DutyFinder', 'getInstance'));

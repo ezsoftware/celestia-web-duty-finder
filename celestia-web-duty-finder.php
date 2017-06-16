@@ -25,4 +25,4 @@ class CW_DF_DutyFinder {
   }
 } 
 
-add_action("plugins_loaded", array(CW_DF_DutyFinder, 'getInstance'));
+add_action("plugins_loaded", array('CW_DF_DutyFinder', 'getInstance'));

@@ -21,7 +21,7 @@ class CW_DF_DutyFinder {
   }
   private function __construct() {
     CW_DF_Classes::getInstance();
-    var_dump('here');
+    echo '<!-- here -->';
   }
 } 
 

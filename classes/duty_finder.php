@@ -13,7 +13,7 @@ class CW_DF_DutyFinder {
   static $template = null;
   private static function getTemplate() {
     if(self::$template === null) {
-      self::$template = file_get_contents(ABSPATH . '/templates/duty_finder.html');
+      self::$template = file_get_contents(CW_DF_ABSPATH . '/templates/duty_finder.html');
     }
     return self::$template;
   }

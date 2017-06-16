@@ -10,6 +10,8 @@
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 require_once 'classes/index.php';
+
+define("CW_DF_ABSPATH", plugin_dir_path(__FILE__));
  
 class CW_DutyFinder {    
   static $instance = null;
@@ -27,11 +29,11 @@ class CW_DutyFinder {
   }
 
   public function enqueue_scripts_styles() {
-    wp_enqueue_style('celestiaWeb-DutyFinder_css', plugin_dir_path(__FILE__) . '/css/styles.css');
-    wp_enqueue_script('celestiaWeb-DutyFinder_js', plugin_dir_path(__FILE__) . '/js/main.js');
+    wp_enqueue_style('celestiaWeb-DutyFinder_css', CW_DF_ABSPATH . '/css/styles.css');
+    wp_enqueue_script('celestiaWeb-DutyFinder_js', CW_DF_ABSPATH . '/js/main.js');
   }
   public function admin_enqueue_scripts_styles() {
-    wp_enqueue_style('celestiaWeb-DutyFinder_admin_css', plugin_dir_path(__FILE__) . '/css/admin_styles.css');
+    wp_enqueue_style('celestiaWeb-DutyFinder_admin_css', CW_DF_ABSPATH . '/css/admin_styles.css');
   }
 } 
 

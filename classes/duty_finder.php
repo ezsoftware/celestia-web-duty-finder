@@ -23,7 +23,7 @@ class CW_DF_DutyFinder {
   }
 
   public function cw_df_duty_finder_shorcode($atts) {
-    $template = self::$template;
+    $template = $this->getTemplate();
 
     return $template;
   }

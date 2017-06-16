@@ -4,7 +4,9 @@
   height: auto;
   min-height: 100px;
   background: #313131;
-  border: 4px solid linear-gradient(#b2ab99, #676047, #332d1a);
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(#b2ab99, #676047, #332d1a);
   border-radius: 6px;
 }
 .cw-df_title {

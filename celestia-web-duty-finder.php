@@ -21,7 +21,17 @@ class CW_DF_DutyFinder {
   }
   private function __construct() {
     CW_DF_Classes::getInstance();
-    echo '<!-- here -->';
+
+    add_action("wp_enqueue_scripts", array($this, 'enqueue_scripts_styles'));
+    add_action("admin_enqueue_scripts", array($this, 'admin_enqueue_scripts_styles'));
+  }
+
+  public function enqueue_scripts_styles() {
+    wp_enqueue_style('celestiaWeb-DutyFinder_css', plugin_dir_path(__FILE__) . '/css/styles.css');
+    wp_enqueue_script('celestiaWeb-DutyFinder_js', plugin_dir_path(__FILE__) . '/js/main.js');
+  }
+  public function admin_enqueue_scripts_styles() {
+    wp_enqueue_style('celestiaWeb-DutyFinder_admin_css', plugin_dir_path(__FILE__) . '/css/admin_styles.css');
   }
 } 
 

@@ -1,8 +1,8 @@
 .cw-df_duty-finder {
-  width: 300px;
+  width: 450px;
   max-width: 100%;
   height: auto;
-  min-height: 100px;
+  min-height: 300px;
   background: #313131;
   border: 2px solid #6b614c;
   box-shadow: 0 0 0 2px #b1a995, 0 0 0 2px #312b19 inset;
@@ -24,4 +24,14 @@
   font-size: 15px;
   margin-left: 10px;
   font-weight: bold;
+}
+
+.cw-df_close {
+  background-image: url('images/eorzean-close-icon.png');
+  float: right;
+  width: 22px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }

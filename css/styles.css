@@ -6,6 +6,8 @@
   background: #313131;
   border: 2px solid #6b614c;
   box-shadow: 0 0 0 2px #b1a995, 0 0 0 2px #312b19 inset;
+  border-radius: 6px;
+  overflow:hidden;
 }
 .cw-df_title {
   background: -webkit-linear-gradient(#626262, #313131);
@@ -20,4 +22,6 @@
   color: #adadad;
   text-shadow: 0 0 2px #3d3d3d;
   font-size: 15px;
+  margin-left: 10px;
+  font-weight: bold;
 }

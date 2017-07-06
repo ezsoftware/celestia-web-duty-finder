@@ -1,17 +1,15 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-require_once "duty_finder.php";
-
-class CW_DF_Classes {  
+class CW_DF_SKELETON {  
   static $instance = null;
   public static function getInstance() {
     if(self::$instance === null) {
-      self::$instance = new CW_DF_Classes();
+      self::$instance = new CW_DF_SKELETON();
     }
     return self::$instance;
   }
   private function __construct() {
-    CW_DF_DutyFinder::getInstance();
+
   }
 }
